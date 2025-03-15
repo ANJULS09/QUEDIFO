@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+	<title>Login & SignUp</title>
+	<link rel="stylesheet" href="loginStyle.css">
+</head>
+<body>
+<div class="form-box">
+	<div class="button-box">
+		<div id="btn"></div>
+		<button type="button" class="toggle-btn" id="log" onclick="toggleForm(true)" style="color: #fff;">Log In</button>
+		<button type="button" class="toggle-btn" id="reg" onclick="toggleForm(false)">Register</button>
+	</div>
+	<div class="social-icons">
+		<img src="images/fb2.png" alt="Facebook">
+		<img src="images/insta2.png" alt="Instagram">
+		<img src="images/tt2.png" alt="Twitter">
+	</div>
+
+	<!-- Login Form -->
+	<form id="login" class="input-group" action="/login" method="post">
+		<div class="inp">
+			<label for="login-email">
+				<img src="images/user.png" alt="User Icon">
+				<input type="text" id="login-email" name="email" class="input-field" placeholder="Email" required>
+			</label>
+		</div>
+		<div class="inp">
+			<label for="login-password">
+				<img src="images/password.png" alt="Password Icon">
+				<input type="password" id="login-password" name="password" class="input-field" placeholder="Password" required>
+			</label>
+		</div>
+		<label>
+			<input type="checkbox" class="check-box"> Remember Password
+		</label>
+		<button type="submit" class="submit-btn">Log In</button>
+	</form>
+
+	<div class="other" id="other">
+		<div class="instead">
+			<h3>or</h3>
+		</div>
+		<button class="connect" onclick="redirectToGoogle()">
+			<img src="images/google.png" alt="Google Icon"><span>Sign in with Google</span>
+		</button>
+	</div>
+
+	<!-- Registration Form -->
+	<form id="register" class="input-group" action="/register" method="post" onsubmit="return validateRegistration()">
+		<label for="register-fullname">
+			<input type="text" id="register-fullname" class="input-field" placeholder="Full Name" name="fullname" required>
+		</label>
+		<label for="register-email">
+			<input type="email" id="register-email" class="input-field" placeholder="Email Address" name="email" required>
+		</label>
+		<label for="register-password">
+			<input type="password" id="register-password" class="input-field" placeholder="Create Password" name="password" required>
+		</label>
+		<label for="register-confirm-password">
+			<input type="password" id="register-confirm-password" class="input-field" placeholder="Confirm Password" required>
+		</label>
+		<label>
+			<input type="checkbox" id="chkAgree" class="check-box" onclick="toggleRegisterButton()"> I agree to the Terms & Conditions
+		</label>
+		<button type="submit" id="btnSubmit" class="submit-btn reg-btn" disabled>Register</button>
+	</form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

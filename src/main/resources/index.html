@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="png" href="images/favicon.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>SRMLearn</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
+ 			 }else {
+ 		   $('nav').removeClass('black');
+ 		 }
+		})
+	</script>
+</head>
+<body>
+<!-- Navigation Bar -->
+	<header id="header">
+		<nav>
+			<div class="logo"><img src="images/clublogo.jpg" alt="logo"></div>
+			<ul>
+				<li><a class="active" href="">Home</a></li>
+				<li><a href="#service-section">Services</a></li>
+				<li><a href="#team_section">Team</a></li>
+				<li><a href="#contactus_section">Contact</a></li>
+			</ul>
+			<div class="srch"><input type="text" class="search" placeholder="Search here..."><img src="images/search.png" alt="search" onclick=slide()></div>
+			<img src="images/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+		</nav>
+		<div class="head-container">
+			<div class="svg-image">
+				<img src="images/archgate1.jpg" alt="svg">
+			</div>
+			<div class="quote">
+				<p>Welcome to <strong>Quedifo</strong></p>
+				<h5>Connecting You to Every Club, Passion, and Opportunity on Campus.</h5>
+			</div>
+		</div>
+		<div class="side-menu" id="side-menu">
+			<div class="close" onclick="sideMenu(1)"><img src="images/close.png" alt=""></div>
+			<div class="user">
+				<img src="images/roshan.jpeg" alt="Username">
+				<p>roshank9419</p>
+			</div>
+			<ul>
+				<li><a href="#about_section">About</a></li>
+				<li><a href="#portfolio_section">Portfolio</a></li>
+				<li><a href="#team_section">Team</a></li>
+				<li><a href="#services_section">Services</a></li>
+				<li><a href="#contactus_section">Contact</a></li>
+				<li><a href="#feedBACK">Feedback</a></li>
+			</ul>
+		</div>
+	</header>
+
+<!---Services-->
+<div class="service-swipe">
+	<div class="diffSection" id="services_section">
+	<center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px; color: #fff;">Clubs</p></center>
+	</div>
+	<a href="https://www.gdscsrm.com/"><div class="s-card"><img src="images/gdsc.jpg"><p>Google Developers Student Club </p></div></a>
+	<a href="https://www.blockchainclubsrm.com/"><div class="s-card"><img src="images/blockchain.jpg"><p>BlockChain Club</p></div></a>
+	<a href="https://next-tech-site.vercel.app/"><div class="s-card"><img src="images/nexttechlab.jpg"><p>NextTech Lab</p></div></a>
+	<a href="https://www.htbsrmist.tech/"><div class="s-card"><img src="images/hackthbox.jpg"><p>HackTheBox</p></div></a>
+	<a href="https://www.srmkzilla.net/"><div class="s-card"><img src="images/srmkzilla.jpg"><p>SRMKZILLA</p></div></a>
+	<a href="http://githubsrm.tech/"><div class="s-card"><img src="images/github.jpg"><p>GitHub Community</p></div></a>
+</div>
+
+
+
+<!-- Some Popular clubs -->
+<div class="title">
+	<span>Popular Clubs</span>
+</div>
+<br><br>
+<div class="course">
+	<center><div class="cbox">
+	<div class="det"><a href="https://www.srmist.edu.in/directorate-of-student-affairs/"><img src="">Directorate of student affairs</a></div>
+	<div class="det"><a href="https://www.aaruush.org/"><img src="">Aaruush</a></div>
+	<div class="det"><a href="https://srmmunsociety.com/"><img src="">SRM MUN</a></div>
+	</div></center>
+	<div class="cbox">
+	<div class="det"><a href="https://nsccsrm.in/#"><img src="">NSCC</a></div>
+	<div class="det"><a href="https://www.srmkzilla.net/"><img src="">Srmkzilla</a></div>
+	<div class="det"><a href="https://www.instagram.com/githubsrm/?hl=en"><img src="">Srm Github Community</a></div>
+	<div class="det det-last"><a href="https://cherrynetwork.in/"><img src="">Cherry+ Network</a></div>
+	</div>
+</div>
+	
+<!-- ABOUT -->
+	<div class="diffSection" id="about_section">
+		<center><p style="font-size: 50px; padding: 100px">About</p></center>
+		<div class="about-content">
+				<div class="side-image">
+					<img class="sideImage" src="images/club.jpg">
+				</div>
+				<div class="side-text">
+					<p>Welcome to QUEDIFO , the ultimate hub for all club-related information on campus! Our mission is to connect students with the vibrant community of clubs and organizations available at our university. Whether you're looking to explore new interests, find like-minded peers, or develop leadership skills, we provide you with all the details you need to discover the perfect club for you.
+
+						Our platform offers a comprehensive directory of clubs, including information on their mission, activities, events, and how to join. You can easily browse through various categories, check out upcoming events, and even read reviews and experiences shared by other students. We aim to make it simple and exciting for you to get involved, make new friends, and enrich your college experience.
+						
+						</p>
+				</div>
+		</div>
+	</div>
+
+<!-- TEAM -->
+<div class="diffSection" id="team_section">
+	<center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">We're the Creators</p></center>
+	<div class="totalcard">
+	<div class="card">
+	<center><img src="images/anjul.jpg"></center>
+	<center><div class="card-title">Anjul Shukla</div>
+	<div id="detail">
+	<p>“ You can teach a student a lesson for a day; but if you can teach him to learn by creating curiosity, he will continue the learning process as long as he lives “</p>
+	<div class="duty"></div>
+	<a href="https://www.linkedin.com/in/anjul-shukla-4b769b287"_blank"><button class="btn-roshan">Follow +</button></a>
+	</div>
+	</center>
+	</div>
+	<div class="card">
+	<center><img src="images/arnav.jpg"></center>
+	<center><div class="card-title">Arnav Kapoor</div>
+	<div id="detail">
+	<p>“ Imparting a lesson is a fleeting act, but igniting a passion for learning is a lifelong gift. Cultivate curiosity, and you'll be the architect of a continuous journey through the realms of knowledgey “</p>
+	<div class="duty"></div>
+	<a href="https://www.linkedin.com/in/kaparnav" target="_blank"><button class="btn-akhil">Follow +</button></a>
+	</div>
+	</center>
+	</div>
+	<div class="card">
+	<center><img src="images/sohum.jpg"></center>
+	<center><div class="card-title">Sohum chandra Srivastav</div>
+	<div id="detail">
+	<p>“ Real education should consist of drawing the goodness and the best out of our own students. What better books can there be than the book of humanity “</p>
+	<div class="duty"></div>
+	<a href="https://www.linkedin.com/in/sohumcs/" target="_blank"><button class="btn-akhil">Follow +</button></a>
+	</div>
+	</center>
+	</div>
+	<div class="card">
+	<center><img src="images/ronil.jpg"></center>
+	<center><div class="card-title">Ronil Shah</div>
+	<div id="detail">
+	<p>“ Planting the seeds of knowledge in a student's mind is like providing them with a perpetual garden of learning. Nurture curiosity, and they'll harvest wisdom throughout their lifetime“</p>
+	<div class="duty"></div>
+	<a href="www.linkedin.com/in/ronil-shah-16a68b2a0www.linkedin.com/in/ronil-shah-16a68b2a0" target="_blank"><button class="btn-akhil">Follow +</button></a>
+	</div>
+	</center>
+	</div>
+	</div>
+	</div>
+	
+
+<!-- Recommendation  by Students -->
+<div id="makeitfull">
+	<a href="#review_section"><img src="images/makeitfull.png"></a>
+</div>
+<div class="review">
+	<div class="diffSection" id="review_section">
+			<center><p style="font-size: 40px; padding: 100px; padding-bottom: 40px; color: #2E3D49;">What the Students Recommended us ?</p></center>
+	</div>
+	<div class="rev-container">
+			<div class="rev-card">
+					<div class="identity">
+							<img src="images/astitva.jpg"><p>Astitva Mishra</p>
+							<div class="rating"><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"></div>
+					</div>
+					<div class="rev-cont">
+							<p id="title">Recommend:</p>
+							<p id="content">
+								Add a calendar feature to easily view upcoming club events and meetings. 
+					</div>
+			</div>
+			<div class="rev-card">
+					<div class="identity">
+							<img src="images/ck.jpg"><p>Chandrakant Subeshwar Subudhi</p>
+							<div class="rating"><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"></div>
+					</div>
+					<div class="rev-cont">
+							<p id="title">Recommend:</p>
+							<p id="content">
+								Include a section for student reviews and experiences with each club to help others choose the right fit.
+							</p>
+					</div>
+			</div>
+			<div class="rev-card">
+					<div class="identity">
+							<img src="images/rohan.jpg"><p>Rohan Bhandari</p>
+							<div class="rating"><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"></div>
+					</div>
+					<div class="rev-cont">
+							<p id="title">Recommend:</p>
+							<p id="content">
+								Make the website mobile-friendly for easier access and navigation on smartphones.
+							</p>
+					</div>
+			</div>
+			<div class="rev-card">
+					<div class="identity">
+							<img src="images/sitanshu.jpg"><p>Sitanshu Mishra</p>
+							<div class="rating"><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"></div>
+					</div>
+					<div class="rev-cont">
+							<p id="title">Recommend:</p>
+							<p id="content">
+								Add a feature to directly contact club leaders or sign up for newsletters to stay updated on club activities.
+							</p>
+					</div>
+			</div>
+	</div>
+</div>
+
+<!-- CONTACT US -->
+	<div class="diffSection" id="contactus_section">
+		<center><p style="font-size: 50px; padding: 100px">Contact Us</p></center>
+		<div class="csec"></div>
+		<div class="back-contact">
+			<div class="cc">
+			<form action="mailto:roshank9419@gmail.com" method="post" enctype="text/plain">
+				<label>First Name <span class="imp">*</span></label><label style="margin-left: 185px">Last Name <span class="imp">*</span></label><br>
+				<center>
+				<input type="text" name="" style="margin-right: 10px; width: 175px" required="required"><input type="text" name="lname" style="width: 175px" required="required"><br>
+				</center>
+				<label>Email <span class="imp">*</span></label><br>
+				<input type="email" name="mail" style="width: 100%" required="required"><br>
+				<label>Message <span class="imp">*</span></label><br>
+				<input type="text" name="message" style="width: 100%" required="required"><br>
+				<label>Additional Details</label><br>
+				<textarea name="addtional"></textarea><br>
+				<button type="submit" id="csubmit">Send Message</button>
+			</form>
+			</div>
+		</div>
+	</div>
+
+
+<!-- FEEDBACK -->
+	<div class="title2" id="feedBACK">
+		<span>Give Feedback</span>
+		<div class="shortdesc2">
+			<p>Please share your valuable feedback to us</p>
+		</div>
+	</div>
+
+	<div class="feedbox">
+		<div class="feed">
+			<form action="mailto:roshank9419@gmail.com" method="post" enctype="text/plain">
+				<label>Your Name</label><br>
+				<input type="text" name="" class="fname" required="required"><br>
+				<label>Email</label><br>
+				<input type="email" name="mail" required="required"><br>
+				<label>Additional Details</label><br>
+				<textarea name="addtional"></textarea><br>
+				<button type="submit" id="csubmit">Send Message</button>
+			</form>
+		</div>
+	</div>
+
+<!-- Sliding Information -->
+	<marquee style="background: linear-gradient(to right, #FA4B37, #DF2771); margin-top: 50px;" direction="left" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="20"><div class="marqu">“Unleash Your Potential Beyond the Classroom – Explore, Connect, and Elevate with Campus Clubs! Every club is a new journey waiting to be embarked upon, a passion to be discovered, and a community to belong to. Dive into diverse opportunities that fuel your creativity, leadership, and growth. Whether you want to lead, learn, or just belong, your place is here. Transform your college experience by joining a club today – where learning meets adventure, and every step takes you closer to who you'bacre meant to be”</div></marquee>
+
+<!-- FOOTER -->
+<footer>
+	<div class="footer-container">
+			<div class="left-col">
+					<img src="images/clublogo.jpg" style="width: 200px;">
+					<div class="logo"></div>
+					<div class="social-media">
+							<a href="#"><img src="images\fb.png"></a>
+							<a href="#"><img src="images\insta.png"></a>
+							<a href="#"><img src="images\tt.png"></a>
+							<a href="#"><img src="images\ytube.png"></a>
+							<a href="#"><img src="images\linkedin.png"></a>
+					</div><br><br>
+					<p class="rights-text">Copyright ©️ 2024 Created By Anjul Shukla, Arnav Kapoor, Sohum Chandra Srivastava, Ronil Shah. All Rights Reserved.</p>
+					<br><p><img src="images/location.png"> SRM INSTITUTE OF SCIENCE AND TECHNOLOGY KATTANKULATHUR <br> KATTANKULATHUR, TAMIL NADU-603203</p><br>
+					<p><img src="images/phone.png"> +91-9560978340<br><img src="images/mail.png">&nbsp; quedifo@gmail.com</p>
+			</div>
+	</div>
+</footer>
+
+</body>
+</html>
